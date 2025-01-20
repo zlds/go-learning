@@ -19,6 +19,9 @@ func TestPoint(t *testing.T) {
 	//aPtr = aPtr + 1
 	t.Log(a, aPtr)
 	t.Logf("%T %T", a, aPtr)
+	// 通过指针修改值
+	*aPtr = 100
+	t.Log(a)
 }
 
 func TestString(t *testing.T) {
