@@ -27,3 +27,9 @@ func TestSliceShareMemory(t *testing.T) {
 	t.Log(Q2)
 	t.Log(len(Q2), cap(Q2))
 }
+
+func TestMakeSlice(t *testing.T) {
+	// make创建切片
+	s := make([]int, 3, 5)
+	t.Log(len(s), cap(s))
+}
