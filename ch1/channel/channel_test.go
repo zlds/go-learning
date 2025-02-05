@@ -1,4 +1,4 @@
-package csp
+package channel
 
 import (
 	"fmt"
